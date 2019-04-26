@@ -27,7 +27,7 @@
     • $git push -u origin master  → error →$ git push  -f origin master 
     1) changes an existing remote repository URL.
        1) $ git reomte -v
-       2) $ git remote set-url --push <old_url> <new_url>
+       2) $ git remote set-url --push <old_url> <new_url>****
        3) $ git remote set-url --delete <current_url>
        4) $ git remote set-url --add <new_url>
 
@@ -37,6 +37,11 @@
 import React from 'react';
 import Select from 'react-select';
 ```
+
+## vs code : user Interfac :
+* https://code.visualstudio.com/docs/getstarted/userinterface
+* Activity Bar, Side Bar, Stasut Bar, Panel, Editor Groups
+  
 ### lifting state up :
 * Often, several components need to reflect the same changing data. We recommend lifting the shared state up to their closest common ancestor.
 
@@ -77,4 +82,4 @@ https://css-tricks.com/prettier-beautify/
 * https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify
 * js-beautify for VS Code:  Beautify javascript, JSON, CSS, Sass, and HTML in Visual Studio Code.
 
-* VS Code uses js-beautify internally, but it lacks the ability to modify the style you wish to use. This extension enables running js-beautify in VS Code, AND honouring any .jsbeautifyrc file in the open file's path tree to load your code styling. Run with F1 Beautify (to beautify a selection) or F1 Beautify file.
+* VS Code uses js-beautify internally, but it lacks the ability to modify the style you wish to use. This extension enables running js-beautify in VS Code, AND honouring any .jsbeautifyrc file in the open file's path tree to load your code styling. Run with F1 Beautify (to beautify a selection) or F1 Beautify file.********
