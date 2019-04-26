@@ -31,4 +31,50 @@
        3) $ git remote set-url --delete <current_url>
        4) $ git remote set-url --add <new_url>
 
-### Often, several components need to reflect the same changing data. We recommend lifting the shared state up to their closest common ancestor.
+* react-select install : $ yarn add react-select
+  Then use it in your app:
+```
+import React from 'react';
+import Select from 'react-select';
+```
+### lifting state up :
+* Often, several components need to reflect the same changing data. We recommend lifting the shared state up to their closest common ancestor.
+
+### eslint + prettier : not good for html
+* Make .eslintrc.js with the following contents:
+```
+module.exports = {
+  "extends": "plugin:prettier/recommended"
+};
+```
+* Good:
+  * You press save and code is formatted
+  * No need to discuss style in code review
+  * Saves you time and energy
+* Bad:
+  *  Prettier doesn't do all languages. Notably HTML. It's great at JSX
+* How to: 
+  * ctrl + shift + x : extention show up.
+  * type prettier : reaload -> success formatting !
+### beautify 
+*  beautify will merge in the setting from your .editorconfig files
+*   is there any option to turn off beautifier on js file because i prefer prettier for js? -> Add "beautify.language": { "js": [] } to your VS Code settings.
+### prettier vs beautify 
+https://css-tricks.com/prettier-beautify/ 
+* Vs code plugin beautify -> installed but it stop working prettier, so settings.json
+```
+{
+ ...
+
+  "beautify.language": {
+    "html": ["html", "php", "erb"],
+    "css": [],
+    "js": []
+  }
+}
+```
+### JS solution with Bautfify : js-beautify for VS Code(Not instlled yet)
+* https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify
+* js-beautify for VS Code:  Beautify javascript, JSON, CSS, Sass, and HTML in Visual Studio Code.
+
+* VS Code uses js-beautify internally, but it lacks the ability to modify the style you wish to use. This extension enables running js-beautify in VS Code, AND honouring any .jsbeautifyrc file in the open file's path tree to load your code styling. Run with F1 Beautify (to beautify a selection) or F1 Beautify file.

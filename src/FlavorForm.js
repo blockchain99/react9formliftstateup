@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Select from 'react-select';
-import FavFormShow from './FavFormShow';
+// import FavFormShow from './FavFormShow';
 const options = [
     { value: 'chocolate', label: 'Chocolate' },
     { value: 'strawberry', label: 'Strawberry' },
@@ -15,7 +15,7 @@ const options2 = [
 class FlavorForm extends Component {
   constructor(props) {
     super(props); 
-    // if selectedObj: null, when not input & submit cause error !
+    // if {selectedObj: null}, when not input & submit cause error !
     this.state = {  selectedObj: { value: 'chocolate', label: 'Chocolate' } };  //obj for optionChanged
 
     this.handleSubmit = this.handleSubmit.bind(this);
